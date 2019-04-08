@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class QuestionDemo3
-{
+{ int x;
+
    public static void main(String[] args)
    {
       Question[] quiz = new Question[2];

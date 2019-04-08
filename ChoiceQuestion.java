@@ -26,8 +26,20 @@ public class ChoiceQuestion extends Question
       if (correct) 
       {
          // Convert choices.size() to string
-         String choiceString = "" + choices.size();
-         setAnswer(choiceString);
+
+         /* Note: Changed this method from
+         setAnswer("" + choices.size()) to
+         setAnswer(super.getAnswer() + choices.size())
+
+         This allows me to have a string to multiple answer #s
+         (e.g. if the answers are 1, 2, and/or 4, the answers
+         string is "124")
+
+         Makes checking for multiple answers possible and
+         (hopefully) easy
+          */
+
+         setAnswer(super.getAnswer() + choices.size());
       }
    }
    

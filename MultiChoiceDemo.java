@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MultiChoiceDemo
 {
-   public static void main(String[] args)
+    public static void main(String[] args)
    {
       ChoiceQuestion q = new MultiChoiceQuestion();
       q.setText("Which programming languages use { } for blocks?");

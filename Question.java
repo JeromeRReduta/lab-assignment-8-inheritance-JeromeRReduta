@@ -15,6 +15,16 @@ public class Question
       answer = "";
    }
 
+
+   public String getText() {
+      return text;
+}
+
+   public String getAnswer() {
+      return answer;
+   }
+
+
    /**
       Sets the question text.
       @param questionText the text of this question
